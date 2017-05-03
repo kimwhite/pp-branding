@@ -18,7 +18,7 @@ function change_my_wp_login_image() {
 echo "
 <style>
 body.login #login h1 a {
-background: url('http://pixelpaper.net/site/wp-content/uploads/2014/07/PixelPaper-logo.png') no-repeat transparent;height:117px;width:280px;
+background: url('//pixelpaper.net/site/wp-content/uploads/2014/07/PixelPaper-logo.png') no-repeat transparent;height:117px;width:280px;
 }
 
 </style>
@@ -27,7 +27,7 @@ background: url('http://pixelpaper.net/site/wp-content/uploads/2014/07/PixelPape
 add_action("login_head", "change_my_wp_login_image");
 
 function my_login_logo_url() {
-    return 'http://www.pixelpaper.net';
+    return '//www.pixelpaper.net';
 }
 add_filter( 'login_headerurl', 'my_login_logo_url' );
 
